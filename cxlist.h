@@ -25,7 +25,7 @@
         (LIST_PTR)->cap = (LIST_PTR)->cap == 0 ? 2 : (LIST_PTR)->cap * 2; \
         (LIST_PTR)->data = realloc((LIST_PTR)->data, list_sizeof_item(LIST_PTR) * (LIST_PTR)->cap); \
     } \
-    list_end(LIST_PTR) = (ITEM); \
+    list_tail(LIST_PTR) = (ITEM); \
 } while(0)
 
 // MACRO: appends a variadic argument list
